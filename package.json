@@ -23,5 +23,9 @@
     "http": "^0.0.1-security",
     "socket.io": "^4.8.1",
     "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "wscat": "^6.0.1"
   }
 }

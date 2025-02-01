@@ -16,7 +16,8 @@ app.use(express.json());
 
 // Ruta de prueba para comprobar que el servidor está funcionando
 app.get("/", (req, res) => {
-  res.json({ message: "Servidor funcionando" });
+    console.log(req.body);
+    res.json({ message: "Servidor funcionando" });
 });
 
 // Inicializa el servidor, que se pone a la escucha
@@ -25,12 +26,15 @@ server.listen(PORT, () => {
   });
   
 // WebSockets para comunicación en tiempo real
+let usuariosConectados = 0;
 io.on("connection", (socket) => {
-  console.log("Un usuario se ha conectado");
+    console.log("Un usuario se ha conectado");
+    usuariosConectados++;
+    console.log("Usuarios conectados: ", usuariosConectados);
 
-  socket.on("disconnect", () => {
+    socket.on("disconnect", () => {
     console.log("Un usuario se ha desconectado");
+    usuariosConectados--;
+    console.log("Usuarios conectados: ", usuariosConectados);
   });
 });
-
-
