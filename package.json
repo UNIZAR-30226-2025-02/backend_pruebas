@@ -1,0 +1,24 @@
+{
+  "name": "backend_pruebas",
+  "version": "1.0.0",
+  "description": "Despliegue de un servidor sencillo con Node.js (Express.js)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UNIZAR-30226-2025-02/backend_pruebas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UNIZAR-30226-2025-02/backend_pruebas/issues"
+  },
+  "homepage": "https://github.com/UNIZAR-30226-2025-02/backend_pruebas#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "zod": "^3.24.1"
+  }
+}
