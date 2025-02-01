@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/UNIZAR-30226-2025-02/backend_pruebas#readme",
   "dependencies": {
+    "chess.js": "^1.0.0",
     "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.8.1",
     "zod": "^3.24.1"
   }
 }
